@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -554,50 +554,25 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.m-7 {
+  margin: 1.75rem;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+.m-8 {
+  margin: 2rem;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+.m-9 {
+  margin: 2.25rem;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.pointer-events-none {
-  pointer-events: none;
-}
-
-.\!visible {
-  visibility: visible !important;
-}
-
-.relative {
-  position: relative;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-4 {
@@ -605,20 +580,24 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
-.me-auto {
-  margin-inline-end: auto;
-}
-
-.ms-2 {
-  margin-inline-start: 0.5rem;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -633,28 +612,32 @@ video {
   display: none;
 }
 
-.w-full {
-  width: 100%;
+.h-5 {
+  height: 1.25rem;
 }
 
-.flex-grow {
-  flex-grow: 1;
+.h-6 {
+  height: 1.5rem;
 }
 
-.basis-\[100\%\] {
-  flex-basis: 100%;
+.w-32 {
+  width: 8rem;
 }
 
-.flex-col {
-  flex-direction: column;
+.w-6 {
+  width: 1.5rem;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.w-60 {
+  width: 15rem;
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
@@ -665,31 +648,85 @@ video {
   justify-content: space-between;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.border-0 {
-  border-width: 0px;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.p-0 {
-  padding: 0px;
+.rounded-full {
+  border-radius: 9999px;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.border {
+  border-width: 1px;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(175 169 164 / var(--tw-border-opacity, 1));
+}
+
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity, 1));
+}
+
+.border-b-red {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(214 72 44 / var(--tw-border-opacity, 1));
+}
+
+.bg-beige {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 244 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 128 99 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 72 44 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-3 {
@@ -697,12 +734,21 @@ video {
   padding-right: 0.75rem;
 }
 
-.ps-0 {
-  padding-inline-start: 0px;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.ps-2 {
-  padding-inline-start: 0.5rem;
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-xl {
@@ -710,8 +756,36 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-beige {
+  --tw-text-opacity: 1;
+  color: rgb(246 244 240 / var(--tw-text-opacity, 1));
+}
+
+.text-brown {
+  --tw-text-opacity: 1;
+  color: rgb(165 128 99 / var(--tw-text-opacity, 1));
+}
+
+.text-customblack {
+  --tw-text-opacity: 1;
+  color: rgb(22 22 19 / var(--tw-text-opacity, 1));
 }
 
 .text-red {
@@ -719,157 +793,21 @@ video {
   color: rgb(214 72 44 / var(--tw-text-opacity, 1));
 }
 
-.text-black {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(22 22 19 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-black\/30 {
-  color: rgb(22 22 19 / 0.3);
-}
-
-.text-black\/50 {
-  color: rgb(22 22 19 / 0.5);
-}
-
-.text-black\/60 {
-  color: rgb(22 22 19 / 0.6);
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
-}
-
-.hover\:text-black\/80:hover {
-  color: rgb(22 22 19 / 0.8);
-}
-
-.hover\:no-underline:hover {
-  text-decoration-line: none;
-}
-
-.hover\:shadow-none:hover {
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:ease-in-out:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.focus\:text-black\/80:focus {
-  color: rgb(22 22 19 / 0.8);
-}
-
-.focus\:no-underline:focus {
-  text-decoration-line: none;
-}
-
-.focus\:shadow-none:focus {
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.focus\:ring-0:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.active\:text-black\/80:active {
-  color: rgb(22 22 19 / 0.8);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .motion-reduce\:transition-none {
-    transition-property: none;
-  }
+.ring-offset-indigo-800 {
+  --tw-ring-offset-color: #3730a3;
 }
 
 @media (min-width: 1024px) {
-  .lg\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .lg\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .lg\:\!flex {
-    display: flex !important;
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {
     display: none;
   }
-
-  .lg\:basis-auto {
-    flex-basis: auto;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .lg\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .lg\:pe-1 {
-    padding-inline-end: 0.25rem;
-  }
-
-  .lg\:ps-0 {
-    padding-inline-start: 0px;
-  }
-
-  .lg\:ps-2 {
-    padding-inline-start: 0.5rem;
-  }
-}
-
-.\[\&\>svg\]\:w-7>svg {
-  width: 1.75rem;
-}
-
-.\[\&\>svg\]\:stroke-black\/50>svg {
-  stroke: rgb(22 22 19 / 0.5);
 }
