@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <h2
+          class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-customblack"
+        >
+          Sign in to your account
+        </h2>
+      </div>
+
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" action="#" method="POST">
+          <div>
+            <label
+              for="email"
+              class="block text-sm/6 font-medium text-customblack"
+              >Email address</label
+            >
+            <div class="mt-2">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+                class="block w-full rounded-md bg-beige px-3 py-1.5 text-base text-customblack outline outline-1 -outline-offset-1 outline-gray placeholder:text-gray focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-red sm:text-sm/6"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between">
+              <label
+                for="password"
+                class="block text-sm/6 font-medium text-customblack"
+                >Password</label
+              >
+            </div>
+            <div class="mt-2">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="current-password"
+                required
+                class="block w-full rounded-md bg-beige px-3 py-1.5 text-base text-customblack outline outline-1 -outline-offset-1 outline-gray placeholder:text-gray focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-red sm:text-sm/6"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="flex w-full justify-center rounded-md bg-red px-3 py-1.5 text-sm/6 font-semibold text-beige shadow-sm hover:bg-brown focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+            >
+              Sign in
+            </button>
+          </div>
+        </form>
+
+        <p class="mt-10 text-center text-sm/6 text-gray">
+          Dont have an account?
+          <a href="#" class="font-semibold text-red hover:text-brown"
+            >Sign up</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
