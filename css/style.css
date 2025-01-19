@@ -989,6 +989,22 @@ body {
   color: rgb(133 77 14 / var(--tw-text-opacity, 1));
 }
 
+.accent-pink-500 {
+  accent-color: #ec4899;
+}
+
+.accent-red {
+  accent-color: #D6482C;
+}
+
+.accent-brown {
+  accent-color: #A58063;
+}
+
+.accent-customblack {
+  accent-color: #161613;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1035,6 +1051,11 @@ body {
 .placeholder\:text-gray::placeholder {
   --tw-text-opacity: 1;
   color: rgb(175 169 164 / var(--tw-text-opacity, 1));
+}
+
+.checked\:bg-red:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 72 44 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-indigo-500:hover {
@@ -1095,6 +1116,11 @@ body {
 .focus\:ring-indigo-600:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity, 1));
+}
+
+.focus\:ring-red:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(214 72 44 / var(--tw-ring-opacity, 1));
 }
 
 .focus-visible\:outline:focus-visible {
